@@ -1,0 +1,124 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black; 
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+  text-align: center;
+  padding: 20px;
+}
+header h1{
+  margin: 0;
+  font-size: 50px;
+  color: white;
+}
+nav{
+  overflow: hidden;
+  text-align: center;
+}
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+nav li{
+  display: inline;
+}
+nav a{
+  display:inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav a:hover {
+background-color:gray;
+border-radius: 10%;
+}
+.skills{
+  text-align: center;
+  padding: 30px;
+  margin-top: 80px;
+}
+.skills h2{
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+.languagelist {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.languagelist li{
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+.languagelist img{
+  width: 50px;
+  margin-bottom: 10px;
+}
+.languagename{
+display: none;
+font-size: 16px;
+}
+.languagelist li:hover .languagename{
+  display:block;
+}
+.about{
+  text-align: center;
+  padding: 30px;
+  margin-top: 80px;
+}
+.about h2{
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+.about p{
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+.contact{
+  text-align: center;
+  padding: 30px;
+  margin-top: 80px;
+  color: white;
+}
+.contact h2{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.contactlinks{
+  margin-top: 20px;
+}
+.contactlinks a{
+  display: inline-block;
+  margin: 0 10px;
+}
+.contactlinks img{
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+.project{
+  text-align: center;
+  padding: 30px;
+  margin-top: 10px;
+  color: white;
+}
