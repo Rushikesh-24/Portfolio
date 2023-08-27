@@ -12,11 +12,16 @@ body{
 header{
   text-align: center;
   padding: 20px;
+  margin-top: 190px;
 }
 header h1{
   margin: 0;
-  font-size: 50px;
+  font-size: 100px;
   color: white;
+}
+header p{
+  color: white;
+  font-size: larger;
 }
 nav{
   overflow: hidden;
@@ -80,7 +85,7 @@ font-size: 16px;
 .about{
   text-align: center;
   padding: 30px;
-  margin-top: 80px;
+  margin-top: 200px;
 }
 .about h2{
   font-size: 24px;
