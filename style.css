@@ -9,20 +9,6 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-header{
-  text-align: center;
-  padding: 20px;
-  margin-top: 190px;
-}
-header h1{
-  margin: 0;
-  font-size: 100px;
-  color: white;
-}
-header p{
-  color: white;
-  font-size: larger;
-}
 nav{
   overflow: hidden;
   text-align: center;
@@ -47,6 +33,19 @@ nav a:hover {
 background-color:gray;
 border-radius: 10%;
 }
+header{
+  text-align: center;
+  margin-top: 190px;
+}
+header h1{
+  margin: 0;
+  font-size: 6.5vw;
+  color: white;
+}
+header p{
+  color: white;
+  font-size: larger;
+}
 .skills{
   text-align: center;
   padding: 30px;
@@ -62,6 +61,7 @@ border-radius: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .languagelist li{
   margin: 15px;
