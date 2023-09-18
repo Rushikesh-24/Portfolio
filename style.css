@@ -30,7 +30,7 @@ nav a{
   text-decoration: none;
 }
 nav a:hover {
-background-color:gray;
+background-color:rgb(175, 173, 173);
 border-radius: 10%;
 }
 header{
@@ -41,6 +41,7 @@ header h1{
   margin: 0;
   font-size: 6.5vw;
   color: white;
+  letter-spacing: 1rem;
 }
 header p{
   color: white;
@@ -109,12 +110,18 @@ font-size: 16px;
   font-size: 24px;
   margin-bottom: 20px;
 }
+.contact p{
+  font-size: 16px;
+  color: white;
+  margin-bottom: 20px;
+}
 .contactlinks{
   margin-top: 20px;
 }
 .contactlinks a{
   display: inline-block;
   margin: 0 10px;
+  
 }
 .contactlinks img{
   width: 50px;
@@ -125,5 +132,83 @@ font-size: 16px;
   text-align: center;
   padding: 30px;
   margin-top: 10px;
+  color: white;
+}
+h1 span{
+  display: inline-block;
+  animation: animate 1s ease-in-out;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+@keyframes animate {
+  0%{
+    opacity: 0%;
+    transform: rotateY(90deg);
+    filter: blur(10px);
+  }
+  100%{
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0px);
+  }
+}
+h1 span:nth-child(1){
+animation-delay: 0.3s;
+}
+h1 span:nth-child(2){
+  animation-delay:0.6s ;
+}
+h1 span:nth-child(3){
+  animation-delay:0.9s ;
+}
+h1 span:nth-child(4){
+  animation-delay:1.2s ;
+}
+h1 span:nth-child(5){
+  animation-delay: 1.5s;
+}
+h1 span:nth-child(6){
+  animation-delay: 1.8s;
+}
+h1 span:nth-child(7){
+  animation-delay: 2.1s;
+}
+h1 span:nth-child(8){
+  animation-delay: 2.4s;
+}
+h1 span:nth-child(9){
+  animation-delay: 2.7s;
+ }
+.contact form{
+  max-width: 35rem;
+  text-align: left;
+}
+.contact label{
+  display: block;
+  margin-bottom: 5px;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: white;
+}
+.contact button{
+  background-color: #c9c6c6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cursor button:hover{
+  background-color: rgb(76, 190, 208);
+}
+.contact name{
   color: white;
 }

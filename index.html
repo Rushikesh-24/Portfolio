@@ -39,7 +39,9 @@
     </div></nav>
     <header>
         <p>Hi, I'm</p>
-    <h1>Rushikesh</h1>
+    <h1>
+      <span>R</span><span>U</span><span>S</span><span>H</span><span>I</span><span>K</span><span>E</span><span>S</span><span>H</span>
+    </h1>
         <p>A student and an aspiring webdeveloper </p>
     </header>
    
@@ -70,6 +72,16 @@
    </section>
    <section  id="contact" class="contact">
    <h2>Contact</h2>
+   <p>Have questions or feedback? Get in touch with me!</p>
+   <form id="contactform" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com" onfocus="clearPlaceholder()" required>
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" required></textarea>
+    <button type="submit">Submit</button>
+   </form>
    <div class="contactlinks">
     <a href="mailto:rushikeshgaonkar24@gmail.com" target="_blank"><img src="Images/email.png" alt=""> </a>
     <a href="https://www.linkedin.com/in/rushikesh-gaonkar-599449287"target="_blank"><img src="Images/linkedin.png" alt=""></a>
