@@ -129,29 +129,48 @@ font-size: 16px;
   background-color: white;
   border-radius: 50%;
 }
+.projectlist{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.projectlist li{
+  margin: 15px;
+  cursor: pointer;
+}
 .project{
   text-align: center;
   padding: 30px;
   margin-top: 10px;
   color: white;
 }
-.projectitem{
-  display: inline-block;
-  margin: 20px;
-  position: relative;
-  text-align: center;
+.project1{
+  width: 20rem;
+  height: auto;
+
+}
+.project2{
+  width: 20rem;
+  height: auto;
 }
 .projectitem img{
   width: 20rem;
   height: auto;
   border-radius: 10px;
+  z-index: -1;
+  display: block;
+  max-width: 100%;
 }
-.projectitem:hover img{
+.project1:hover img{
   filter: blur(4px);
 }
-.description{
-  position: absolute;
-  top: 100px;
+.project2:hover img{
+  filter: blur(4px);
+}
+.description1{
+  position: relative;
+  top: -10rem;
   left: 0;
   color: #fff;
   padding: 20px;
@@ -159,10 +178,27 @@ font-size: 16px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
-.projectitem:hover::before{
+.description2{
+  position: relative;
+  top: -10rem;
+  left: 0;
+  color: #fff;
+  padding: 20px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.project1:hover::before{
   opacity: 1;
 }
-.projectitem:hover .description{
+.project1:hover .description1{
+  display: block;
+  opacity: 1;
+}
+.project2:hover::before{
+  opacity: 1;
+}
+.project2:hover .description2{
   display: block;
   opacity: 1;
 }
